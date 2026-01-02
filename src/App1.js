@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { DiHtml5, DiCss3, DiJavascript1, DiBootstrap, DiReact, DiPython } from 'react-icons/di';
-import { FaMoon, FaSun, FaGithub, FaEnvelope, FaRocket, FaCode, FaBrain, FaLinkedin, FaDownload } from 'react-icons/fa';
+import { FaMoon, FaSun, FaGithub, FaEnvelope, FaRocket, FaCode, FaBrain, FaLinkedin } from 'react-icons/fa';
 import './App.css';
 
 // Animated Background Particles Component
@@ -190,15 +190,6 @@ const Home = () => {
           <Link to="/projects" className="cta-btn primary">
             <FaRocket /> View Projects
           </Link>
-          <a 
-            href="https://huggingface.co/spaces/Atulsinghbirla/Portfolio/resolve/main/RESUME.pdf" 
-            download="Atul_Birla_Resume.pdf"
-            className="cta-btn download"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaDownload /> Download CV
-          </a>
           <Link to="/contact" className="cta-btn secondary">
             <FaEnvelope /> Get In Touch
           </Link>
@@ -254,7 +245,7 @@ const About = () => {
 const Projects = () => {
   const projects = [
     {
-      title: 'Crop Recommendation System',
+      title: 'Crop reccomendation System',
       description: 'The Crop Recommendation System is a machine learning based application that helps farmers select the most suitable crop to grow based on soil and environmental conditions. By analyzing factors such as soil nutrients (Nitrogen, Phosphorus, Potassium), temperature, humidity, rainfall, and pH value, the system predicts the optimal crop, enabling data-driven agricultural decisions, improved yield, and reduced risk.',
       tech: 'Python, Machine Learning, Scikit-learn, Pandas, NumPy, Random Forest Classifier, Matplotlib, Streamlit',
       icon: '🌾',
@@ -262,7 +253,7 @@ const Projects = () => {
       link: 'https://atulsinghbirla-crop-recommendation.hf.space'
     },
     {
-      title: 'Vision Assist - AI',
+      title: 'Vision Assist - Ai',
       description: 'Vision AI is a computer vision based system that uses deep learning models to detect and recognize real-world objects in real time through a camera feed. The system processes visual data using AI models and provides intelligent outputs such as object identification, scene understanding, and audio feedback, making it useful for applications like assistive technology, surveillance, and smart automation.',
       tech: 'Python, Computer Vision, Deep Learning, YOLO, OpenCV, PyTorch, Vision AI, Real-Time Object Detection, Text-to-Speech',
       icon: '👁️',
@@ -270,7 +261,7 @@ const Projects = () => {
       link: 'https://atulsinghbirla-visionaigradio.hf.space'
     },
     {
-      title: 'Car Price Prediction',
+      title: 'Car price Prediction',
       description: 'Car Price Prediction is a machine learning based system that estimates the market value of a car by analyzing features such as brand, model, year, mileage, fuel type, transmission, and ownership history. The system helps users make informed buying and selling decisions using data-driven price estimation.',
       tech: 'Python, Machine Learning, Scikit-learn, Pandas, NumPy, Linear Regression, Random Forest Regressor, Matplotlib, Seaborn, Streamlit',
       icon: '🚗',
@@ -299,7 +290,7 @@ const Projects = () => {
               <span className="tech-badge">{project.tech}</span>
             </div>
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-              <FaRocket /> View Live Demo →
+              <FaGithub /> View on GitHub →
             </a>
           </div>
         ))}
