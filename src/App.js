@@ -191,7 +191,7 @@ const Home = () => {
             <FaRocket /> View Projects
           </Link>
           <a 
-            href="https://huggingface.co/spaces/Atulsinghbirla/Portfolio/resolve/main/RESUME.pdf" 
+            href="https://huggingface.co/spaces/Atulsinghbirla/Portfolio/resolve/main/CV.pdf" 
             download="Atul_Birla_Resume.pdf"
             className="cta-btn download"
             target="_blank"
